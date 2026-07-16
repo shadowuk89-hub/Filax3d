@@ -1,4 +1,4 @@
-export const basePath = "/Filax3d";
+export const basePath = "";
 
 export function sitePath(path = "/") {
   const normalized = path.startsWith("/") ? path : `/${path}`;

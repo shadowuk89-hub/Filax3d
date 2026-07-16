@@ -4,7 +4,7 @@ import { categories } from "./catalog/catalog-data";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const origin = "https://shadowuk89-hub.github.io/Filax3d";
+  const origin = "https://filax3d.com";
   return [{
     url: `${origin}/`,
     lastModified: new Date(),

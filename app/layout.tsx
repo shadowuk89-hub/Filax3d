@@ -8,7 +8,7 @@ const sans = Geist({ variable: "--font-sans", subsets: ["latin", "cyrillic"] });
 const mono = Geist_Mono({ variable: "--font-mono", subsets: ["latin", "cyrillic"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shadowuk89-hub.github.io/Filax3d/"),
+  metadataBase: new URL("https://filax3d.com/"),
   title: "FILAX3D — Студія 3D-друку",
   description: "3D-друк, моделювання, прототипування та малі серії. Перетворюємо ідеї на точні фізичні об’єкти.",
   alternates: { canonical: "/" },
