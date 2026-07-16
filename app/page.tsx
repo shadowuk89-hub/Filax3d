@@ -1,4 +1,5 @@
 import MobileMenu from "./MobileMenu";
+import { sitePath } from "./site-paths";
 
 const services = [
   ["01", "3D-друк", "Від одиничної деталі до малої серії"],
@@ -46,7 +47,7 @@ export default function Home() {
         </div>
         <div className="heroVisual">
           <div className="orbit orbitOne" />
-          <div className="monogramCrop"><img src="/filax3d-logo.png" width="1254" height="1254" alt="Монограма FILAX3D" /></div>
+          <div className="monogramCrop"><img src={sitePath("/filax3d-logo.png")} width="1254" height="1254" alt="Монограма FILAX3D" /></div>
           <span className="coordinate top">ВИРОБНИЦТВО · УКРАЇНА</span>
           <span className="coordinate bottom">PRECISION / LAYER BY LAYER</span>
         </div>
@@ -71,7 +72,7 @@ export default function Home() {
       <section className="works section" id="works">
         <div className="shell sectionHead worksHead"><div><p className="eyebrow"><i /> КАТАЛОГ ІДЕЙ</p><h2>Речі говорять<br />краще за слова.</h2></div><a className="textLink" href="https://t.me/Filax3d" target="_blank" rel="noreferrer">Показати свою ідею <span>↗</span></a></div>
         <div className="workGrid shell">
-          {works.map(([kind, title, text, slug, cover], i) => <a className={`work work${i + 1}`} key={kind} href={`/catalog/${slug}`} aria-label={`${title}: відкрити категорію`}><div className="workPhoto"><img src={cover} alt="" loading={i > 2 ? "lazy" : "eager"} /></div><div className="workMeta"><span>0{i + 1}</span><div><h3>{title}</h3><p>{text}</p></div><b>→</b></div></a>)}
+          {works.map(([kind, title, text, slug, cover], i) => <a className={`work work${i + 1}`} key={kind} href={sitePath(`/catalog/${slug}/`)} aria-label={`${title}: відкрити категорію`}><div className="workPhoto"><img src={sitePath(cover)} alt="" loading={i > 2 ? "lazy" : "eager"} /></div><div className="workMeta"><span>0{i + 1}</span><div><h3>{title}</h3><p>{text}</p></div><b>→</b></div></a>)}
         </div>
       </section>
 
