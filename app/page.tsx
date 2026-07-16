@@ -1,3 +1,5 @@
+import MobileMenu from "./MobileMenu";
+
 const services = [
   ["01", "3D-друк", "Від одиничної деталі до малої серії"],
   ["02", "3D-моделювання", "Створимо модель за ескізом або зразком"],
@@ -25,10 +27,8 @@ export default function Home() {
         <nav aria-label="Головна навігація">
           <a href="#services">Послуги</a><a href="#works">Каталог</a><a href="#materials">Матеріали</a>
         </nav>
-        <details className="mobileMenu">
-          <summary>Меню</summary>
-          <div><a href="#services">Послуги</a><a href="#works">Каталог</a><a href="#materials">Матеріали</a><a href="#contact">Контакти</a></div>
-        </details>
+        <MobileMenu />
+        <a className="mobileContact" href="#contact">Контакти</a>
         <a className="navCta" href="https://t.me/Filax3d" target="_blank" rel="noreferrer">Обговорити проєкт <span>↗</span></a>
       </header>
 
@@ -88,8 +88,8 @@ export default function Home() {
       </section>
 
       <section className="contact shell" id="contact">
-        <div><p className="eyebrow"><i /> Є ІДЕЯ?</p><h2>Давайте надамо<br />їй <em>форму.</em></h2></div>
-        <div className="contactLinks"><a href="https://t.me/Filax3d" target="_blank" rel="noreferrer"><span>Telegram</span><b>Filax 3D ↗</b></a><a href="viber://chat?number=%2B380936417695"><span>Viber</span><b>Filax 3D ↗</b></a><a href="tel:+380936417695"><span>Телефон</span><b>093 641 76 95 ↗</b></a></div>
+        <div><p className="eyebrow"><i /><span className="contactPromptDesktop">Є ІДЕЯ?</span><span className="contactPromptMobile">ГОТОВІ НАДАТИ ІДЕЇ ФОРМУ?</span></p><h2>Давайте надамо<br />їй <em>форму.</em></h2></div>
+        <div className="contactLinks"><a href="https://t.me/Filax3d" target="_blank" rel="noreferrer" aria-label="Telegram — Filax 3D"><span className="contactIcon" aria-hidden="true">➤</span><span className="contactLabel">Telegram</span><b>Filax 3D ↗</b></a><a href="viber://chat?number=%2B380936417695" aria-label="Viber — Filax 3D"><span className="contactIcon viberIcon" aria-hidden="true"><img src="https://cdn.simpleicons.org/viber/FFFFFF" alt="" /></span><span className="contactLabel">Viber</span><b>Filax 3D ↗</b></a><a href="tel:+380936417695" aria-label="Зателефонувати: 093 641 76 95"><span className="contactIcon" aria-hidden="true">☎</span><span className="contactLabel">Телефон</span><b>093 641 76 95</b></a><p className="studioLocation">Студія 3D-друку на Чайках.</p></div>
       </section>
       </main>
 

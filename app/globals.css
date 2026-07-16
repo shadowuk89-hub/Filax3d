@@ -44,6 +44,79 @@ html,body{overflow-x:clip}.productCard:focus-visible{outline:3px solid #91a4ff;o
 .productCard:hover .productImage img[src*="/catalog/studio/parts/"],.productCard:hover .productImage img[src$="/catalog/gear-set-v2.webp"],.productCard:hover .productImage img[src$="/catalog/pipe-adapter-v2.webp"],.productCard:hover .productImage img[src$="/catalog/precision-coupling-v2.webp"]{transform:scale(1.025)}
 .productImage img[src*="/catalog/makerworld/"]{object-fit:contain;padding:16px;background:#11141a;transform:none}
 .productCard:hover .productImage img[src*="/catalog/makerworld/"]{transform:scale(1.025)}
+.mobileContact{display:none}
+.contactIcon{display:none}
+.contactPromptMobile,.studioLocation{display:none}
+
+/* Compact mobile layout; desktop rules remain unchanged. */
+@media(max-width:560px){
+  .nav{gap:8px}
+  .mobileContact{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:8px 9px;border:1px solid #3a4050;color:#d6d9e2;font:9px var(--font-mono);letter-spacing:.04em}
+  .mobileMenu summary{font-size:10px}
+  .navCta{font-size:9px;line-height:1.1;padding:9px 8px}
+  .heroCopy h1{font-size:44px;line-height:.98;margin-top:28px}
+  .heroCopy .lead{font-size:14px;line-height:1.5;margin:24px 0}
+  .heroActions .textLink,.ctaHint{display:none}
+  .heroVisual{min-height:350px}
+  .coordinate.bottom{left:50%;bottom:18px;transform:translateX(-50%);width:max-content;text-align:center}
+  .coordinate.top{display:none}
+  .proof{display:none}
+  .section{padding:58px 0}
+  .sectionHead{gap:16px;margin-bottom:30px}
+  .sectionHead h2{font-size:36px;line-height:1}
+  .sectionHead>p:last-child{font-size:12px;line-height:1.45}
+  .servicesSection .sectionHead>.eyebrow,.worksHead .eyebrow,.materials .sectionHead>.eyebrow,.brief>div>.eyebrow{display:none}
+
+  .serviceGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service{min-height:238px;padding:15px}
+  .serviceObject{height:92px}
+  .serviceObject b{width:58px;height:58px;box-shadow:13px 18px 28px #000}
+  .object04 b{width:70px;height:48px}
+  .service h3{font-size:17px;margin:15px 0 7px;line-height:1.05}
+  .service p{font-size:11px;line-height:1.35;margin:0 0 38px}
+  .service>a{right:14px;bottom:14px;width:32px;height:32px}
+
+  .worksHead{grid-template-columns:1fr}
+  .worksHead .textLink{justify-self:start}
+  .workGrid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:205px;gap:8px}
+  .workMeta{padding:42px 12px 12px;grid-template-columns:22px 1fr auto}
+  .workMeta h3{font-size:16px;line-height:1}
+  .workMeta p{font-size:10px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .workMeta>b{font-size:13px}
+
+  .materials .sectionHead{grid-template-columns:1fr}
+  .materialRail{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .materialRail article{padding:8px}
+  .swatch{height:118px}
+  .swatch span{width:48px;height:76px;border-radius:24px;box-shadow:9px 12px 20px #000}
+  .materialRail h3{font-size:17px;margin:10px 0 3px}
+  .materialRail p{font-size:10px;line-height:1.3;min-height:26px}
+  .materialNote{font-size:12px;line-height:1.45;margin-top:16px}
+
+  .brief{gap:22px}
+  .brief h2{font-size:38px;margin-top:18px}
+  .briefItems{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .briefItems span{padding:13px 0;font-size:11px;line-height:1.3}
+  .briefItems span:before{margin-right:7px}
+  .briefAction p{font-size:12px;margin:0 0 16px}
+  .contact{width:calc(100% - 30px);margin:0 auto 18px;padding:28px 18px;gap:20px;border:1px solid #96a6ef;overflow:hidden;background:radial-gradient(circle at 90% 10%,#aebaff55,transparent 34%),var(--blue);box-shadow:0 22px 55px #05071373}
+  .contact .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;color:#121a3b}
+  .contact .eyebrow i{width:8px;height:8px;box-shadow:0 0 14px #111}
+  .contact h2{font-size:38px;line-height:.98;margin-top:20px}
+  .contact h2 br{display:none}
+  .contactLinks{gap:7px}
+  .contactPromptDesktop{display:none}
+  .contactPromptMobile{display:inline}
+  .contactLabel{display:none}
+  .contactLinks a{min-height:52px;padding:7px 8px;display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:center;border:1px solid #34478f;background:#ffffff12}
+  .contactIcon{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#0d153f;color:#f3f5ff;font:700 15px var(--font-mono);box-shadow:inset 0 0 0 1px #ffffff28}
+  .viberIcon img{width:20px;height:20px;display:block}
+  .contactLinks b{font-size:14px}
+  .studioLocation{display:block;margin:8px 0 0;padding-top:12px;border-top:1px solid #40549e;color:#17204a;font:10px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;text-align:center}
+  footer{height:auto;min-height:72px;justify-content:center}
+  footer>.wordmark{display:none}
+  footer>a:last-child{margin:auto;font-size:11px;letter-spacing:.1em}
+}
 @media(max-width:900px){.singleLineTitle{white-space:normal}}
 .servicesSection .sectionHead>p:last-child{display:none}
 .ticker div{position:relative;left:50%;width:max-content;animation:tickerDrift 18s ease-in-out infinite alternate}
