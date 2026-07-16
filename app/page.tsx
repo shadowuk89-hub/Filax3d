@@ -37,7 +37,7 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="heroCopy">
           <p className="eyebrow"><i /> 3D PRINTING STUDIO · UKRAINE</p>
-          <h1>Друкуємо те,<br />що ще вчора<br />було <em>ідеєю.</em></h1>
+          <h1><span className="heroTitleLine">Друкуємо те,</span><br />що ще вчора<br />було <em>ідеєю.</em></h1>
           <p className="lead">Перетворюємо ескізи, файли та сміливі задуми на точні фізичні об’єкти — від першого прототипу до готової серії.</p>
           <div className="heroActions">
             <a className="primary" href="https://t.me/Filax3d" target="_blank" rel="noreferrer">Розрахувати проєкт <b>↗</b></a>
