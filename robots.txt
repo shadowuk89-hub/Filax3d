@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://filax3d.com/sitemap.xml
