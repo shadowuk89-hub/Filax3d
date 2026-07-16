@@ -121,7 +121,9 @@ html,body{overflow-x:clip}.productCard:focus-visible{outline:3px solid #91a4ff;o
 .heroTitleLine{white-space:nowrap}
 @media(min-width:901px){.nav{justify-content:flex-start}.nav>nav{margin-left:auto;margin-right:30px}}
 @media(min-width:561px){.contactLinks a{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:14px;align-items:center}.contactLinks .contactIcon{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#0d153f;color:#f3f5ff;font:700 15px var(--font-mono);box-shadow:inset 0 0 0 1px #ffffff28}.contactLinks .viberIcon img{width:20px;height:20px;display:block}}
-@media(min-width:901px){.proof{grid-template-columns:1.12fr 1.12fr .88fr .88fr}}
+@media(min-width:901px){.proof{grid-template-columns:1.12fr 1.12fr .88fr .88fr!important}}
+@media(min-width:561px) and (max-width:900px){.proof{grid-template-columns:1fr 1fr!important}}
+@media(max-width:560px){.proof{grid-template-columns:1fr!important}}
 .servicesSection .sectionHead>p:last-child{display:none}
 .ticker div{position:relative;left:50%;width:max-content;animation:tickerDrift 18s ease-in-out infinite alternate}
 @keyframes tickerDrift{from{transform:translateX(calc(-50% - 32px))}to{transform:translateX(calc(-50% + 32px))}}
