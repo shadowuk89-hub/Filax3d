@@ -53,13 +53,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="proof shell" aria-label="Ключові переваги">
-        <article><span>01</span><b>Від однієї деталі</b><p>Прототипи та малі серії</p></article>
-        <article><span>02</span><b>Перевірка моделі</b><p>До запуску у виробництво</p></article>
-        <article><span>03</span><b>5 типів матеріалів</b><p>Під задачу та навантаження</p></article>
-        <article><span>04</span><b>Доставка по Україні</b><p>Готових виробів</p></article>
-      </section>
-
       <div className="ticker" aria-hidden="true"><div>3D PRINTING <i /> MODELING <i /> PROTOTYPING <i /> SMALL BATCHES <i /> FILAX3D <i /> 3D PRINTING <i /> MODELING</div></div>
 
       <section className="section shell servicesSection" id="services">
